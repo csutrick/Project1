@@ -1,13 +1,23 @@
+var option;
+
 async function OMDbData() {
     var searchPar = document.querySelector('#srch').value;
-    console.log(search)
+    console.log(searchPar)
     var key = '93572ae7';
     //type = movie,series,episode
     //s = search parameter
     //y = year of release
 
-    const response = await fetch("http://www.omdbapi.com/?" + 'apikey='+key+'&s='+searchPar);
-    // response.searchParams.set()
+    // var movie = document.querySelector('#movie').checked;
+    // var series = document.querySelector('#movie').checked;
+    // var episodes = document.querySelector('#movie').checked;
+    // if(movie == true){m = 'movie'}
+    // if(series == true){s = 'series'}
+    
+    getOption()
+    
+    console.log(option)
+    const response = await fetch("http://www.omdbapi.com/?" + 'apikey='+key+'&s='+searchPar+'&type='+option);
     const jsonData = await response.json();
     console.log(jsonData)
     var results = jsonData.Search[0].Title;
@@ -24,3 +34,11 @@ async function OMDbData() {
     document.getElementById("result4").innerHTML = results4;
     document.getElementById("result5").innerHTML = results5;
 }
+
+
+
+    function getOption() {
+        selectElement = document.querySelector('#select1');
+        option = selectElement.value;
+        return option;
+    }

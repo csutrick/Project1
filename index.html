@@ -16,6 +16,34 @@
     
     <label id="search" for="search">Search for:</label>
     <input type="text" id="srch" name="search"><br><br>
+    <!-- <fieldset>
+        <legend>Filter by:</legend>
+    
+        <div>
+          <input type="checkbox" id="movie" name="movie" value="movie">
+          <label for="movie">Movies</label>
+        </div>
+        <div>
+          <input type="checkbox" id="series" name="series" value="series">
+          <label for="series">Series</label>
+        </div>
+        <div>
+            <input type="checkbox" id="episodes" name="episodes" value="episodes">
+            <label for="episodes">Episodes</label>
+          </div>
+    </fieldset> -->
+    <p> Filter by:
+        <select id="select1">
+            <option value="blank"></option>
+            <option value="movie">Movies</option>
+            <option value="series">Series</option>
+            <option value="episode">Episodes</option>
+        </select>
+    </p>
+    <p> The value of the option selected is:
+        <span class="output"></span>
+    </p>
+
     <button onclick="OMDbData()">Search</button>
     <h1>Search Results</h1>
     <div class="flex-container">
