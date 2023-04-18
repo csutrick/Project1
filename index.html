@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
 </head>
 <body>
     
-    
+    <div class="inputs">
     <label id="search" for="search">Search for:</label>
     <input type="text" id="srch" name="search"><br><br>
     <!-- <fieldset>
@@ -34,22 +34,21 @@
     </fieldset> -->
     <p> Filter by:
         <select id="select1">
-            <option value="blank"></option>
+            <option value=""></option>
             <option value="movie">Movies</option>
             <option value="series">Series</option>
             <option value="episode">Episodes</option>
         </select>
     </p>
-    <p> The value of the option selected is:
-        <span class="output"></span>
-    </p>
 
     <button onclick="OMDbData()">Search</button>
-    <h1>Search Results</h1>
-    <div class="flex-container">
+</div>
+    
+    <div id="parent" class="flex-container">
         <div class="container flex-child">
           <div class="row">
-            <div class="col">
+            <h1>Search Results</h1>
+            <div id="results" class="col">    
               <p id="result"></p>
               <p id="result1"></p>
               <p id="result2"></p>
@@ -60,6 +59,7 @@
             </div>
           </div>
         </div>
+    </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"></script>
         <script type="text/javascript" src="./script.js"></script>
