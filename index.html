@@ -11,42 +11,51 @@
 </head>
 
 <body>
-    <div id="containerLanding" class="center has-background-info body-height">
-        <div class="columns center">
-            <div class="column">
-                <h1 class="title is-spaced">
-                    Related Research
-                </h1>
-                <div class="column is-full">
-                    <div class="field has-addons">
-                        <div class="control">
-                            <input id="userInputLanding" class="input" type="text" placeholder="Search for content">
-                        </div>
-                        <div class="control">
-                            <button id="butSearchLanding" class="button is-link">Search</button>
-                        </div>
+    <!-- container for landing page -->
+    <div id="containerLanding" class="columns is-mobile body-height">
+        <!-- left spacer column -->
+        <div class="column is-one-quarter has-background-warning">
+            
+        </div>
+        <!-- center column which holds page content-->
+        <div class="column">
+            <h1 class="title is-spaced">
+                Related Research
+            </h1>
+            <div class="column is-full">
+                <div class="field has-addons">
+                    <div class="control">
+                        <input id="userInputLanding" class="input" type="text" placeholder="Search for content">
                     </div>
-                    <div class="column">
-                        <label for="checkbox">
-                            <input type="checkbox" id="movies">
-                            Movies
-                        </label>
-                        <label for="checkbox">
-                            <input type="checkbox" id="shows">
-                            TV
-                        </label>
-                        <label for="checkbox">
-                            <input type="checkbox" id="reddit">
-                            Reddit Posts
-                        </label>
+                    <div class="control">
+                        <button id="butSearchLanding" class="button is-link">Search</button>
                     </div>
+                </div>
+                <div class="column">
+                    <label for="checkbox">
+                        <input type="checkbox" id="movies">
+                        Movies
+                    </label>
+                    <label for="checkbox">
+                        <input type="checkbox" id="shows">
+                        TV
+                    </label>
+                    <label for="checkbox">
+                        <input type="checkbox" id="reddit">
+                        Reddit Posts
+                    </label>
                 </div>
             </div>
         </div>
+        <!-- right spacer column -->
+        <div class="column is-one-quarter has-background-warning">
+
+        </div>
     </div>
+    
 
     <!-- results page -->
-    <div id="containerResults" class="columns is-mobile is-hidden">
+    <div id="containerResults" class="columns is-mobile body-height is-hidden">
         <!-- container for side bar -->
         <div id="sidebar" class="column is-narrow has-background-info">
             <!-- logo above seachbar -->
