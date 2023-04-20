@@ -34,3 +34,26 @@ async function OMDbData() {
         option = selectElement.value;
         return option;
     }
+
+
+
+// Search bar El's
+const buttonSearch = document.getElementById('butSearch');
+const landingInput = document.getElementById('userInput');
+
+// Landing Page El
+const landingEl = document.getElementById('landing');
+
+// When user first loads page, firstSearch function gets
+// user input and stores into searchText
+function firstSearch() {
+    const searchText = landingInput.value;
+    console.log(searchText);
+    // Hides the landing div
+    landingEl.classList.add('is-hidden');
+};
+
+// Waits for the search button to be pressed
+buttonSearch.addEventListener('click', function() {
+    firstSearch();
+});
