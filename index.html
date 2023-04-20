@@ -11,51 +11,62 @@
 </head>
 
 <body>
-    <div class="landing section level mx-6">
+    <div class="landing center has-background-info body-height">
 
-        <div class="columns level-items mx-6 my-6">
-            <div class="section mx-6">
-                <div class="column mx-6">
-                    <h1 class="title mx-6">
+        <div class="columns center">
+            <div class="section">
+                <div class="column">
+                    <h1 class="title is-spaced">
                         Related Research
                     </h1>
-                    <p class="subtitle mx-6">
-                        Testing status: getting closer, but not there yet :/
+                    <p class="subtitle">
+                        Testing status: Centered reflexivly C:
                     </p>
         
-                    <div class="column mx-6">
+                    <div class="column">
                         <div class="field has-addons">
                             <div class="control">
                                 <input class="input" type="text" placeholder="Search for content">
                             </div>
                             <div class="control">
-                                <button class="button is-info">Search</button>
+                                <button class="button is-link">Search</button>
                             </div>
                         </div>
                     </div>
         
-                    <div class="column mx-6">
-                        <input type="checkbox" id="movies">
-                        <input type="checkbox" id="shows">
-                        <input type="checkbox" id="reddit">
+                    <div class="column">
+                        <label for="checkbox">
+                            <input type="checkbox" id="movies">
+                            Movies
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" id="shows">
+                            TV
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" id="reddit">
+                            Reddit Posts
+                        </label>
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
 
     <div class="results is-hidden">
 
         <div class="navBar">
 
-            <div class="control">
-                <input class="input" type="text" placeholder="Search for content">
-            </div>
-            <div class="control">
-                <button class="button is-info">Search</button>
-            </div>
 
+            <div class="field has-addons">
+                <div class="control">
+                    <input class="input" type="text" placeholder="Search for content">
+                </div>
+                <div class="control">
+                    <button class="button is-info">Search</button>
+                </div>
+            </div>
+        
             <div>
                 <input type="checkbox" id="movies">
                 <input type="checkbox" id="shows">
