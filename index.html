@@ -12,26 +12,28 @@
 
 <body>
     <!-- container for landing page -->
-    <div id="containerLanding" class="columns is-mobile body-height">
+    <div id="containerLanding" class="columns is-mobile body-height has-background-info ">
         <!-- left spacer column -->
-        <div class="column is-one-quarter has-background-warning">
-            
-        </div>
+        <div class="column is-one-quarter"></div>  
         <!-- center column which holds page content-->
-        <div class="column">
-            <h1 class="title is-spaced">
+        <div class="column m-6">
+            <!-- title div -->
+            <div class="has-text-centered is-size-4">
+                <p class="has-text-white">
                 Related Research
-            </h1>
-            <div class="column is-full">
+                </p>
+            </div>
+            <!-- search bar container -->
+            <div class="column">
                 <div class="field has-addons">
-                    <div class="control">
+                    <div class="control is-expanded">
                         <input id="userInputLanding" class="input" type="text" placeholder="Search for content">
                     </div>
                     <div class="control">
                         <button id="butSearchLanding" class="button is-link">Search</button>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column center">
                     <label for="checkbox">
                         <input type="checkbox" id="movies">
                         Movies
@@ -48,12 +50,8 @@
             </div>
         </div>
         <!-- right spacer column -->
-        <div class="column is-one-quarter has-background-warning">
-
-        </div>
+        <div class="column is-one-quarter"></div>
     </div>
-    
-
     <!-- results page -->
     <div id="containerResults" class="columns is-mobile body-height is-hidden">
         <!-- container for side bar -->
@@ -66,7 +64,6 @@
                     </figure>
                 </div>
             </div>
-            
             <!-- brandname above seachbar -->
             <div>
                 <p class="has-text-centered has-text-white is-size-6">
@@ -115,10 +112,10 @@
             </div>
         </div>
         <!-- container for results -->
-        <div class="column has-background-warning">
+        <div class="column">
             <!-- how many results were found -->
             <div class="mb-5 mt-1">
-                <p id="resultsEl" class="has-text-centered has-text-white is-size-4">
+                <p id="resultsEl" class="has-text-centered has-text-black is-size-4">
                     ... Results found
                 </p>
             </div>
@@ -128,11 +125,11 @@
             </div>
         </div>
     </div>
-    
     <!-- footer that holds info -->
     <footer>
         
     </footer>
+    
     <!-- links javascript -->
     <script src="Assets/script.js"></script>
 </body>
