@@ -4,56 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
     <title>Related Research</title>
 </head>
 
-<body>
-    <div class="landing">
+<body class="has-background-info">
+    <!-- Top of page navigation bar -->
+    <nav class="navbar has-background-info" role="navigation" aria-label="main navigation"> 
+        <!-- Top left logo -->
+        <div class="navbar-brand">
+            <a href="#" class="navbar-item">
+                <img src="Images/RR place holder.png" alt="">
+            </a>
 
-        <div>
-            <h1>
-                Related Research
-            </h1>
-            <p>
-                
-            </p>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarStack">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-    
-        <div>
-            <input type="text">
-        </div>
-    
-        <div>
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-        </div>
-
-    </div>
-
-    <div class="results">
-
-        <div class="navBar">
-
-            <div>
-                <input type="text">
+        <!-- Buttons -->
+        <div id="navbarStack" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+                <a class="navbar-item">
+                    How to use
+                </a>
             </div>
+        </div>
+    </nav>
 
-            <div>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
+    <!-- Stores all the content for page -->
+    <div class="columns has-background-info mt-5">
+        <!-- Left side spacer -->
+        <div class="column"></div>
+        <!-- Main container that houses all contents -->
+        <div class="column is-two-thirds">
+            <!-- Brandlogo above seachbar -->
+            <div class="has-text-centered">
+                <figure class="image is-inline-block is-128x128">
+                    <img src="Images/RR place holder.png">
+                </figure>
             </div>
-
+            <!-- Brandname above seachbar -->
+            <div>
+                <p class="has-text-centered has-text-white is-size-4">
+                    Related Research
+                </p>
+            </div>
+            <!-- Search Bar -->
+            <div class="field has-addons mt-3 mb-5">
+                <div class="control is-expanded">
+                    <input class="input is-rounded is-medium" type="text" placeholder="Find media">
+                </div>
+                <div class="control">
+                    <a class="button is-rounded is-medium has-text-info">
+                        search
+                    </a>
+                </div>
+            </div>
+            <!-- Search parameters -->
+            <article>
+                <div class="message-header has-background-white has-text-info">
+                    <p>Add Search Parameters</p>
+                </div>
+                <div class="columns message-body">
+                    <div class="column">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Option 1
+                         </label>
+                    </div>
+                    <div class="column">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Option 2
+                         </label>
+                    </div>
+                </div>
+            </article>
         </div>
-
-        <button>Back to Home</button>
-
-        <div class="searchResults">
-        </div>
-
+        <!-- Right side spacer -->
+        <div class="column"></div>
     </div>
-    <script src="Assets/script.js"></script>
 </body>
 </html>
