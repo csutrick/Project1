@@ -4,56 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/styles.css">
     <title>Related Research</title>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css”>
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css”>
 </head>
 
 <body>
-    <div class="landing">
+    <div class="landing center has-background-info body-height">
 
-        <div>
-            <h1>
-                Related Research
-            </h1>
-            <p>
-                
-            </p>
+        <div class="columns center">
+            <div class="section">
+                <div class="column">
+                    <h1 class="title is-spaced">
+                        Related Research
+                    </h1>
+                    <p class="subtitle">
+                        Testing status: Centered reflexivly C:
+                    </p>
+        
+                    <div class="column">
+                        <div class="field has-addons">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Search for content">
+                            </div>
+                            <div class="control">
+                                <button class="button is-link">Search</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column">
+                        <label for="checkbox">
+                            <input type="checkbox" id="movies">
+                            Movies
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" id="shows">
+                            TV
+                        </label>
+                        <label for="checkbox">
+                            <input type="checkbox" id="reddit">
+                            Reddit Posts
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-        <div>
-            <input type="text">
-        </div>
-    
-        <div>
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-        </div>
-
     </div>
 
-    <div class="results">
+    <div class="results is-hidden">
 
         <div class="navBar">
 
-            <div>
-                <input type="text">
-            </div>
 
+            <div class="field has-addons">
+                <div class="control">
+                    <input class="input" type="text" placeholder="Search for content">
+                </div>
+                <div class="control">
+                    <button class="button is-info">Search</button>
+                </div>
+            </div>
+        
             <div>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" id="movies">
+                <input type="checkbox" id="shows">
+                <input type="checkbox" id="reddit">
             </div>
 
         </div>
 
-        <button>Back to Home</button>
+        <button onclick="refresh()">Back to Home</button>
 
         <div class="searchResults">
         </div>
 
     </div>
+    
     <script src="Assets/script.js"></script>
 </body>
 </html>
