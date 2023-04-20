@@ -12,6 +12,7 @@ html, body {
     align-items: center;
 }
 
+/* Makes content take up page height */
 .body-height {
     height: 100%;
 }

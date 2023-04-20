@@ -11,75 +11,126 @@
 </head>
 
 <body>
-    <div id="landing" class="center has-background-info body-height">
-
-        <div class="columns center">
-            <div class="column">
-                <h1 class="title is-spaced">
-                    Related Research
-                </h1>
-                <p class="subtitle">
-                    Testing status: Centered reflexivly C:
+    <!-- container for landing page -->
+    <div id="containerLanding" class="columns is-mobile body-height has-background-info ">
+        <!-- left spacer column -->
+        <div class="column is-one-quarter"></div>  
+        <!-- center column which holds page content-->
+        <div class="column m-6">
+            <!-- title div -->
+            <div class="has-text-centered is-size-4">
+                <p class="has-text-white">
+                Related Research
                 </p>
-        
-                <div class="column is-full">
-                    <div class="field has-addons">
-                        <div class="control">
-                            <input id="userInput" class="input" type="text" placeholder="Search for content">
-                        </div>
-                        <div class="control">
-                            <button id="butSearch" class="button is-link">Search</button>
-                        </div>
+            </div>
+            <!-- search bar container -->
+            <div class="column">
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                        <input id="userInputLanding" class="input" type="text" placeholder="Search for content">
                     </div>
-        
+                    <div class="control">
+                        <button id="butSearchLanding" class="button is-link">Search</button>
+                    </div>
+                </div>
+                <div class="column center">
+                    <label for="checkbox">
+                        <input type="checkbox" id="movies">
+                        Movies
+                    </label>
+                    <label for="checkbox">
+                        <input type="checkbox" id="shows">
+                        TV
+                    </label>
+                    <label for="checkbox">
+                        <input type="checkbox" id="reddit">
+                        Reddit Posts
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- right spacer column -->
+        <div class="column is-one-quarter"></div>
+    </div>
+    <!-- results page -->
+    <div id="containerResults" class="columns is-mobile body-height is-hidden">
+        <!-- container for side bar -->
+        <div id="sidebar" class="column is-narrow has-background-info">
+            <!-- logo above seachbar -->
+            <div class="column">
+                <div class="has-text-centered">
+                    <figure class="image is-inline-block is-96x96">
+                        <img src="img/RR place holder.png">
+                    </figure>
+                </div>
+            </div>
+            <!-- brandname above seachbar -->
+            <div>
+                <p class="has-text-centered has-text-white is-size-6">
+                    Related Research
+                </p>
+            </div>
+            <!-- search bar container -->
+            <div class="field has-addons ml-2 mt-1">
+                <!-- user input -->
+                <div class="control">
+                    <input id="userInputResults" class="input is-rounded is-small" type="text" placeholder="Search media">
+                </div>
+                <!-- search button -->
+                <div class="control">
+                    <a class="button is-rounded is-small has-text-info">
+                        search
+                    </a>
+                </div>
+            </div>
+            <!-- container for parameters -->
+            <div id="parameters">
+                <div class="columns ml-4">
                     <div class="column">
-                        <label for="checkbox">
-                            <input type="checkbox" id="movies">
+                        <label class="checkbox has-text-white">
+                            <input type="checkbox">
                             Movies
                         </label>
-                        <label for="checkbox">
-                            <input type="checkbox" id="shows">
+                    </div>
+                </div>
+                <div class="columns ml-4">
+                    <div class="column">
+                        <label class="checkbox has-text-white">
+                            <input type="checkbox">
                             TV
                         </label>
-                        <label for="checkbox">
-                            <input type="checkbox" id="reddit">
-                            Reddit Posts
+                    </div>
+                </div>
+                <div class="columns ml-4">
+                    <div class="column">
+                        <label class="checkbox has-text-white">
+                            <input type="checkbox">
+                            Reddit
                         </label>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="results">
-
-        <div class="navBar">
-
-
-            <div class="field has-addons">
-                <div class="control">
-                    <input class="input" type="text" placeholder="Search for content">
-                </div>
-                <div class="control">
-                    <button class="button is-info">Search</button>
-                </div>
+        <!-- container for results -->
+        <div class="column">
+            <!-- how many results were found -->
+            <div class="mb-5 mt-1">
+                <p id="resultsEl" class="has-text-centered has-text-black is-size-4">
+                    ... Results found
+                </p>
             </div>
-        
+            <!-- container for cards -->
             <div>
-                <input type="checkbox" id="movies">
-                <input type="checkbox" id="shows">
-                <input type="checkbox" id="reddit">
+                yup
             </div>
-
         </div>
-
-        <button onclick="refresh()">Back to Home</button>
-
-        <div class="searchResults">
-        </div>
-
     </div>
+    <!-- footer that holds info -->
+    <footer>
+        
+    </footer>
     
+    <!-- links javascript -->
     <script src="Assets/script.js"></script>
 </body>
 </html>
