@@ -56,14 +56,21 @@ async function OMDbData() {
         document.getElementById("result4").innerHTML = results4;
         document.getElementById("result5").innerHTML = results5;
     }
-    
-    
-// Search bar El's
-const buttonSearch = document.getElementById('butSearch');
-const landingInput = document.getElementById('userInput');
 
+// Landing page search bar elements
+const buttonSearchLanding = document.getElementById('butSearchLanding');
+const landingInput = document.getElementById('userInputLanding');
+// Results page elements
+const buttonSearchResult = document.getElementById('butSearchResults');
+const resultInput = document.getElementById('userInputResults');
+
+// Controls whats visable and whats hidden
 // Landing Page El
-const landingEl = document.getElementById('landing');
+const landingPageEl = document.getElementById('containerLanding');
+// Results Page El
+const resultPageEl = document.getElementById('containerResults');
+
+
 
 // When user first loads page, firstSearch function gets
 // user input and stores into searchText
@@ -71,11 +78,15 @@ function firstSearch() {
     const searchText = landingInput.value;
     console.log(searchText);
     // Hides the landing div
-    landingEl.classList.add('is-hidden');
+    landingPageEl.classList.add('is-hidden');
+    // Shows results div
+    resultPageEl.classList.remove('is-hidden');
+    // Changes result page search bar text
+    resultInput.value = searchText;
 };
 
 // Waits for the search button to be pressed
-buttonSearch.addEventListener('click', function() {
+buttonSearchLanding.addEventListener('click', function() {
     firstSearch();
 });
 
