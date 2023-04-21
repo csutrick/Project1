@@ -42,10 +42,10 @@
                         <input type="checkbox" id="shows">
                         TV
                     </label>
-                    <label for="checkbox">
+                    <!-- <label for="checkbox">
                         <input type="checkbox" id="reddit">
                         Reddit Posts
-                    </label>
+                    </label> -->
                 </div>
             </div>
         </div>
@@ -78,10 +78,13 @@
                 </div>
                 <!-- search button -->
                 <div class="control">
-                    <a class="button is-rounded is-small has-text-info">
+                    <button onclick="secondSearch()" class="button is-rounded is-small has-text-info is-link">
                         search
-                    </a>
+                    </button>
                 </div>
+                <!-- <div class="control">
+                    <button id="butSearchResult" class="button is-link">Search</button>
+                </div> -->
             </div>
             <!-- container for parameters -->
             <div id="parameters">
@@ -103,10 +106,10 @@
                 </div>
                 <div class="columns ml-4">
                     <div class="column">
-                        <label class="checkbox has-text-white">
+                        <!-- <label class="checkbox has-text-white">
                             <input type="checkbox">
                             Reddit
-                        </label>
+                        </label> -->
                     </div>
                 </div>
             </div>
@@ -121,7 +124,23 @@
             </div>
             <!-- container for cards -->
             <div>
-                yup
+                OMDb:
+                <p id="result"></p>
+                <p id="result1"></p>
+                <p id="result2"></p>
+                <p id="result3"></p>
+                <p id="result4"></p>
+                <p id="result5"></p>
+            </div>
+            <br>
+            <div>
+                Reddit:
+                <p id="result6"></p>
+                <p id="result7"></p>
+                <p id="result8"></p>
+                <p id="result9"></p>
+                <p id="result10"></p>
+                <p id="result11"></p>
             </div>
         </div>
     </div>
