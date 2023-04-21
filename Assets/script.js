@@ -18,6 +18,7 @@ async function OMDbData() {
     const jsonData = await response.json();
     // searchVal = '';
     // console.log(searchVal);
+
     var results = jsonData.Search[0].Title;
     var results1 = jsonData.Search[1].Title;
     var results2 = jsonData.Search[2].Title;
