@@ -111,3 +111,38 @@ function secondSearch() {
     redditData();
 };
 
+// Creates cards and adds search results to page
+function genCard() {
+    // Number of Search terms
+    var searchLimit = 5;
+
+    // Loop for generating OMBd results
+    for (var i = 0; i < searchLimit; i++) {
+        var x = document.createElement('div');
+        var y = document.createElement('div')
+
+        // Assign necessarx classes to card(s)
+        x.classList.add('card')
+        y.classList.add('card-content');
+
+        // appending card together
+        y.append('OMBdResults[i]')
+        x.append(y);
+        resultsBar.append(x)
+    }
+
+    // Loop for generating Reddit results
+    for (var i = 0; i < searchLimit; i++) {
+        var a = document.createElement('div');
+        var b = document.createElement('div')
+
+        a.classList.add('card')
+        a.classList.add('has-background-dark')
+        a.classList.add('has-text-light')
+        b.classList.add('card-content');
+
+        b.append('redditResults[i]')
+        a.append(b);
+        resultsBar.append(a)
+    }
+}
