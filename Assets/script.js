@@ -15,7 +15,7 @@ async function OMDbData() {
     if(series == true){option = 'series'};
     console.log(searchVal);
     // console.log(landingInput.value)
-    const response = await fetch("http://www.omdbapi.com/?" + 'apikey='+key+'&s='+searchVal+'&type='+option);
+    const response = await fetch("https://www.omdbapi.com/?" + 'apikey='+key+'&s='+searchVal+'&type='+option);
     const jsonData = await response.json();
     // searchVal = '';
     // console.log(searchVal);
