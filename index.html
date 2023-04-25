@@ -12,16 +12,17 @@
 
 <body>
     <!-- container for landing page -->
-    <div id="containerLanding" class="columns is-mobile body-height has-background-info ">
+    <div id="containerLanding" class="columns is-mobile body-height center has-background-info ">
         <!-- left spacer column -->
         <div class="column is-one-quarter"></div>  
         <!-- center column which holds page content-->
         <div class="column m-6">
             <!-- title div -->
             <div class="has-text-centered is-size-4">
-                <p class="has-text-white">
-                Related Research
-                </p>
+                <figure class="image is-inline-block is-96x96">
+                    <img src="img/RR place holder.png">
+                </figure>
+                <div class="subtitle has-text-white">Find works by your favorite artists</div>
             </div>
             <!-- search bar container -->
             <div class="column">
@@ -34,12 +35,12 @@
                     </div>
                 </div>
                 <div class="column center">
-                    <label for="checkbox">
-                        <input type="checkbox" id="movies">
+                    <label for="radio">
+                        <input type="radio" name="selector" id="movies">
                         Movies
                     </label>
-                    <label for="checkbox">
-                        <input type="checkbox" id="shows">
+                    <label for="radio">
+                        <input type="radio" name="selector" id="shows" class="ml-5">
                         TV
                     </label>
                     <!-- <label for="checkbox">
@@ -55,7 +56,7 @@
     <!-- results page -->
     <div id="containerResults" class="columns is-mobile body-height is-hidden">
         <!-- container for side bar -->
-        <div id="sidebar" class="column is-narrow has-background-info">
+        <div id="sidebar" class="column is-narrow has-background-link">
             <!-- logo above seachbar -->
             <div class="column">
                 <div class="has-text-centered">
@@ -74,11 +75,11 @@
             <div class="field has-addons ml-2 mt-1">
                 <!-- user input -->
                 <div class="control">
-                    <input id="userInputResults" class="input is-rounded is-small" type="text" placeholder="Search media">
+                    <input id="userInputResults" class="input is-rounded is-small is-rounded" type="text" placeholder="Search media">
                 </div>
                 <!-- search button -->
                 <div class="control">
-                    <button onclick="secondSearch()" class="button is-rounded is-small has-text-info is-link">
+                    <button onclick="secondSearch()" class="button is-rounded is-small has-text-white is-info">
                         search
                     </button>
                 </div>
@@ -90,16 +91,16 @@
             <div id="parameters">
                 <div class="columns ml-4">
                     <div class="column">
-                        <label class="checkbox has-text-white">
-                            <input type="checkbox">
+                        <label class="radio has-text-white">
+                            <input type="radio" name="selector">
                             Movies
                         </label>
                     </div>
                 </div>
                 <div class="columns ml-4">
                     <div class="column">
-                        <label class="checkbox has-text-white">
-                            <input type="checkbox">
+                        <label class="radio has-text-white">
+                            <input type="radio" name="selector">
                             TV
                         </label>
                     </div>
@@ -115,7 +116,7 @@
             </div>
         </div>
         <!-- container for results -->
-        <div class="column">
+        <div class="column has-background-info" id="results">
             <!-- how many results were found -->
             <div class="mb-5 mt-1">
                 <p id="resultsEl" class="has-text-centered has-text-black is-size-4">
@@ -125,23 +126,69 @@
             <!-- container for cards -->
             <div>
                 OMDb:
-                <p id="result"></p>
-                <p id="result1"></p>
-                <p id="result2"></p>
-                <p id="result3"></p>
-                <p id="result4"></p>
-                <p id="result5"></p>
+                <div class="card">
+                    <div class="card-content" id="result">
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" id="result1">
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" id="result2">
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" id="result3">
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" id="result4">
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content" id="result5">
+                        
+                    </div>
+                </div>
+                
             </div>
             <br>
             <div>
                 Reddit:
-                <p id="result6"></p>
-                <p id="result7"></p>
-                <p id="result8"></p>
-                <p id="result9"></p>
-                <p id="result10"></p>
-                <p id="result11"></p>
+                <div class="card">
+                    <div class="card-content" id="result6">
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" id="result7">
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" id="result8">
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" id="result9">
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" id="result10">
+                        
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- footer that holds info -->
